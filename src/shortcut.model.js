@@ -4,7 +4,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var Store = new Schema({
-  urlMap: Object
+  originalUrl: String,
+  shortUrl: String,
+  shortcut: Number
 });
 
 module.exports = mongoose.model('Store', Store);
